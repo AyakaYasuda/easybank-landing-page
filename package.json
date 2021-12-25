@@ -1,0 +1,27 @@
+{
+  "name": "easybank-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/styles.css -o ./dist/dist.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyakaYasuda/easybank-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyakaYasuda/easybank-landing-page/issues"
+  },
+  "homepage": "https://github.com/AyakaYasuda/easybank-landing-page#readme",
+  "devDependencies": {
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0"
+  }
+}
