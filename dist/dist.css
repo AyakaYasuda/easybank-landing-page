@@ -380,6 +380,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 *, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -403,6 +411,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.col-start-2 {
+  grid-column-start: 2;
+}
+.col-start-3 {
+  grid-column-start: 3;
+}
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+.row-start-2 {
+  grid-row-start: 2;
+}
+.row-start-3 {
+  grid-row-start: 3;
+}
+.row-start-4 {
+  grid-row-start: 4;
+}
 .my-4 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -410,11 +454,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .flex-none {
   flex: none;
 }
 .shrink {
   flex-shrink: 1;
+}
+.-translate-y-60 {
+  --tw-translate-y: -15rem;
+  transform: var(--tw-transform);
+}
+.-translate-y-40 {
+  --tw-translate-y: -10rem;
+  transform: var(--tw-transform);
+}
+.-translate-y-20 {
+  --tw-translate-y: -5rem;
+  transform: var(--tw-transform);
+}
+.translate-x-20 {
+  --tw-translate-x: 5rem;
+  transform: var(--tw-transform);
+}
+.translate-x-40 {
+  --tw-translate-x: 10rem;
+  transform: var(--tw-transform);
+}
+.grid-cols-main {
+  grid-template-columns: minmax(auto, 160px) minmax(auto, 500px) 1fr;
+}
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 .content-center {
   align-content: center;
@@ -432,11 +505,68 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+.justify-self-start {
+  justify-self: start;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+}
+.overflow-y-visible {
+  overflow-y: visible;
+}
+.bg-veryLightGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+}
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.object-left-bottom {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+.pb-5 {
+  padding-bottom: 2rem;
+}
+.pr-5 {
+  padding-right: 2rem;
+}
 .font-sans {
   font-family: Public Sans, sans-serif;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.leading-normal {
+  line-height: 1.5;
 }
 .text-grayishBlue {
   --tw-text-opacity: 1;
   color: hsl(233 8% 62% / var(--tw-text-opacity));
+}
+.text-darkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(233 26% 24% / var(--tw-text-opacity));
 }
 

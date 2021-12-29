@@ -26,6 +26,19 @@ module.exports = {
         veryLightGray: 'hsl(0, 0%, 98%)',
         white: 'hsl(0, 0%, 100%)',
       },
+      spacing: {
+        '13': '3.25rem',
+        '15': '3.75rem',
+        '20': '5rem',
+        '40': '10rem',
+        '60': '15rem',
+        '80': '20rem',
+        '128': '32rem',
+        '144': '36rem',
+      },
+      gridTemplateColumns: {
+        'main': 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
+      }
     },
   },
   plugins: [],
