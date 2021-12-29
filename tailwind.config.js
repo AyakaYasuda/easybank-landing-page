@@ -2,8 +2,8 @@ module.exports = {
   content: ['./dist/**/*.{html,js}'],
   theme: {
     screens: {
-      'mobile': '375px',
-      'desktop': '1440px',
+      mobile: '375px',
+      desktop: '1440px',
     },
     spacing: {
       1: '0.5rem',
@@ -27,22 +27,26 @@ module.exports = {
         white: 'hsl(0, 0%, 100%)',
       },
       spacing: {
-        '13': '3.25rem',
-        '15': '3.75rem',
-        '20': '5rem',
-        '40': '10rem',
-        '60': '15rem',
-        '80': '20rem',
-        '128': '32rem',
-        '144': '36rem',
+        13: '3.25rem',
+        15: '3.75rem',
+        20: '5rem',
+        40: '10rem',
+        60: '15rem',
+        80: '20rem',
+        128: '32rem',
+        144: '36rem',
       },
       gridTemplateColumns: {
-        'main': 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
-        'features': 'repeat(auto-fit, minmax(250px, 1fr))'
+        main: 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
+        features: 'repeat(auto-fit, 250px)',
+        card: 'minmax(250px, 1fr)',
+        article: 'repeat(auto-fit, 250px)'
       },
       gridTemplateRows: {
-        'features': '100px 50px max-content',
-      }
+        features: '100px 50px max-content',
+        card: '165px, max-content',
+        desc: 'max-content, max-content, 100px',
+      },
     },
   },
   plugins: [],
