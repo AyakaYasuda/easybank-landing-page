@@ -38,6 +38,10 @@ module.exports = {
       },
       gridTemplateColumns: {
         'main': 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
+        'features': 'repeat(auto-fit, minmax(250px, 1fr))'
+      },
+      gridTemplateRows: {
+        'features': '100px 50px max-content',
       }
     },
   },
