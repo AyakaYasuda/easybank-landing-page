@@ -37,15 +37,19 @@ module.exports = {
         144: '36rem',
       },
       gridTemplateColumns: {
-        main: 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
-        features: 'repeat(auto-fit, 250px)',
-        card: 'minmax(250px, 1fr)',
-        article: 'repeat(auto-fit, 250px)'
+        'main': 'minmax(auto, 160px) minmax(auto, 500px) 1fr',
+        'features': 'repeat(auto-fit, 250px)',
+        'card': 'minmax(250px, 1fr)',
+        'article': 'repeat(auto-fit, 250px)',
+        'footer': '200px 1fr 200px',
+        'footerNav': '200px 200px' 
       },
       gridTemplateRows: {
-        features: '100px 50px max-content',
-        card: '165px, max-content',
-        desc: 'max-content, max-content, 100px',
+        'features': '100px 50px max-content',
+        'card': '165px max-content',
+        'desc': 'max-content max-content 100px',
+        'footer': '1fr 1fr',
+        'footerNav': '30px 30px 30px'
       },
     },
   },

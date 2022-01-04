@@ -216,29 +216,33 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-darkBlue">
-      <img src="../images/logo.svg" alt="Logo" />
+    <footer class="bg-darkBlue px-13 py-20 flex flex-row justify-between">
       <div>
-        <img src="../images/icon-facebook.svg" alt="Facebook" />
-        <img src="../images/icon-youtube.svg" alt="Youtube" />
-        <img src="../images/icon-twitter.svg" alt="Twitter" />
-        <img src="../images/icon-pinterest.svg" alt="Pinterest" />
-        <img src="../images/icon-instagram.svg" alt="Instagram" />
+        <img src="../images/logo.svg" alt="Logo" class="mb-6" />
+        <div class="grid grid-cols-5 justify-center justify-items-center">
+          <img src="../images/icon-facebook.svg" alt="Facebook" />
+          <img src="../images/icon-youtube.svg" alt="Youtube" />
+          <img src="../images/icon-twitter.svg" alt="Twitter" />
+          <img src="../images/icon-pinterest.svg" alt="Pinterest" />
+          <img src="../images/icon-instagram.svg" alt="Instagram" />
+        </div>
       </div>
-      <ul class="text-white">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+      <ul class="text-white grid grid-cols-footerNav grid-rows-footerNav">
+        <li class="col-start-1 row-start-1"><a href="#">About</a></li>
+        <li class="col-start-1 row-start-2"><a href="#">Contact</a></li>
+        <li class="col-start-1 row-start-3"><a href="#">Blog</a></li>
+        <li class="col-start-2 row-start-1"><a href="#">Careers</a></li>
+        <li class="col-start-2 row-start-2"><a href="#">Support</a></li>
+        <li class="col-start-2 row-start-3"><a href="#">Privacy Policy</a></li>
       </ul>
-      <button class="flex-none btn btn-gradient">Request Invite</button>
-      <div class="text-white">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Ayaka Yasuda</a>.
+      <div>
+        <button class="btn btn-gradient mb-4">Request Invite</button>
+        <div class="text-gray-400 text-xs">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            class="">Frontend Mentor</a
+          >. Coded by <a href="#">Ayaka Yasuda</a>.
+        </div>
       </div>
     </footer>
   </body>
