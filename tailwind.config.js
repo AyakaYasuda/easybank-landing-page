@@ -2,8 +2,8 @@ module.exports = {
   content: ['./dist/**/*.{html,js}'],
   theme: {
     screens: {
-      mobile: '375px',
-      desktop: '1440px',
+      'mobile': '375px',
+      'desktop': '1440px',
     },
     spacing: {
       1: '0.5rem',
@@ -27,29 +27,40 @@ module.exports = {
         white: 'hsl(0, 0%, 100%)',
       },
       spacing: {
+        8: '2rem',
+        10: '2.5rem',
         13: '3.25rem',
         15: '3.75rem',
         20: '5rem',
+        30: '7.5rem',
         40: '10rem',
         60: '15rem',
         80: '20rem',
+        100: '25rem',
         128: '32rem',
         144: '36rem',
+        160: '40rem',
+        180: '45rem',
+        200: '50rem',
+        240: '60rem',
       },
       gridTemplateColumns: {
-        'main': 'minmax(auto, 500px) 1fr',
-        'features': 'repeat(auto-fit, minmax(0, 1fr))',
-        'card': 'minmax(250px, 1fr)',
+        'features': 'repeat(auto-fit, minmax(200px, 1fr))',
+        'card': '1fr',
         'article': 'repeat(auto-fit, minmax(250px, 1fr))',
-        'footer': '200px 1fr 200px',
-        'footerNav': 'minmax(100px, 1fr) minmax(100px, 2fr)' 
+        'footer': 'minmax(250px, 1fr) 3fr 2fr',
+        'footer-mobile': 'minmax(300px, 1fr)',
+        'icons': 'repeat(5, 40px)',
+        'footerNav': '1fr 3fr', 
+        'footerNav-mobile': '1fr' 
       },
       gridTemplateRows: {
+        'main-mobile': ' repeat(2, minmax(0, 1fr)) max-content',
         'features': '100px 50px min-content',
-        'card': '165px max-content',
+        'card': '240px max-content',
         'desc': 'max-content max-content 100px',
-        'footer': '1fr 1fr',
-        'footerNav': '30px 30px 30px'
+        'footerNav': 'repear(3, 30px)',
+        'footerNav-mobile': 'repear(6, 30px)'
       },
     },
   },
